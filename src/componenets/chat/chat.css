@@ -162,10 +162,17 @@
         }
         
         .emoji{
+            position: relative;
             img{
                 width: 25px;
                 height: 25px;
                 cursor: pointer;
+            }
+            
+            .picker{
+                position: absolute;
+                bottom: 50px;
+                left: 0;
             }
         }
     }

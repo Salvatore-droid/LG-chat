@@ -1,8 +1,11 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./chatList.css"
 
 const Chatlist = () => {
     const [addMode, setAddMode] = useState(false);
+
+    
+
     return (
         <div className="chatList">
             <div className="search">

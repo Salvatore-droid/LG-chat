@@ -1,13 +1,24 @@
 import Detail from "./componenets/detail/Detail"
 import List from "./componenets/list/List"
 import Chat from "./componenets/chat/Chat"
+import Login from "./componenets/login/Login"
 
 const App = () => {
+
+  const user = true
+
   return (
     <div className='container'>
-      <List/>
-      <Chat/>
-      <Detail/>
+        {
+          user ? (
+            <>
+              <List/>
+              <Chat/>
+              <Detail/>
+            </>
+          ):
+              <Login/>
+        }; 
     </div>
   )
 }
