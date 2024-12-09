@@ -46,6 +46,11 @@
                 border-radius: 10px;
                 outline: none;
                 cursor: pointer;
+
+                &:disabled{
+                    cursor: not-allowed;
+                    background-color: rgba(15, 87, 221, 0.596);
+                }
             }
         }
         img{

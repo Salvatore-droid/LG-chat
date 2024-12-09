@@ -5,6 +5,10 @@ import EmojiPicker from "emoji-picker-react";
 const Chat = () => {
     const [text, setText] = useState("");
     const [open, setOpen] = useState(false);
+    const [picture, setPicture] = useState({
+        file:null,
+        url:""
+    })
 
     const endRef = useRef(null)
 
@@ -16,14 +20,23 @@ const Chat = () => {
         setText((prev) => prev+e.emoji)
         setOpen(false)
     }
+
+    const handlePicture = e =>{
+        if(e.target.files){
+            setPicture({
+                file:e.target.files[0],
+                url:URL.createObjectURL(e.target.files[0])
+            })
+        }
+    }
      return (
         <div className="chat">
             <div className="top">
                 <div className="user">
                     <img src="./avatar.png" alt="" />
                     <div className="texts">
-                        <span>Mifetia</span>
-                        <p>I'm not everyone's cup of tea</p>
+                        <span>Angelina</span>
+                        <p>if it works don't touch it</p>
                     </div>
                 </div>
                 <div className="icons">
@@ -46,7 +59,6 @@ const Chat = () => {
                 </div>
                 <div className="message-own">
                     <div className="texts">
-                        <img src="./lovely.jpg" alt="" />
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Iusto error ratione, similique dolorem mollitia eum dignissimos iure officiis suscipit corrupti, ipsum, 
@@ -122,7 +134,7 @@ const Chat = () => {
             </div>
             <div className="bottom">
                 <div className="icons">
-                    <img src="./img.png" alt="" />
+                    <img src="./img.png" alt="" onClick={handlePicture}/>
                     <img src="./camera.png" alt="" />
                     <img src="./mic.png" alt="" />
                 </div>

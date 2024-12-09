@@ -5,7 +5,7 @@ const Detail = () => {
         <div className="detail">
             <div className="user">
                 <img src="./avatar.png" alt="" />
-                <h2>Lauren</h2>
+                <h2>Angelina</h2>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
             <div className="info">

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import "./chatList.css"
+import AddUser from "../../addUser/AddUser";
 
 const Chatlist = () => {
     const [addMode, setAddMode] = useState(false);
@@ -18,80 +19,81 @@ const Chatlist = () => {
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
             <div className="item">
                 <img src="./avatar.png" alt="" />
                 <div className="texts">
-                    <span>Genius Richard</span>
-                    <p>what's up my dear</p>
+                    <span>Angelina</span>
+                    <p>hello world</p>
                 </div>
             </div>
+            {addMode &&<AddUser/>}
         </div>
     )
 }
